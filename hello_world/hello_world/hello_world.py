@@ -40,9 +40,9 @@ class HelloWorldXBlock(XBlock):
         html = self.resource_string("static/html/hello_world.html")
         frag = Fragment(html.format(self=self))
         frag.add_css(self.resource_string("static/css/hello_world.css"))
-        frag.add_javascript_url(self.resource_url("js/vendor/raphael-min.js"))
-        frag.add_javascript_url(self.resource_url("js/vendor/qwerty-hancock.js"))
-        frag.add_javascript_url(self.resource_url("js/vendor/main.js"))
+        frag.add_javascript(self.resource_string("static/js/src/raphael-min.js"))
+        frag.add_javascript(self.resource_string("static/js/src/qwerty-hancock.js"))
+        frag.add_javascript(self.resource_string("static/js/src/main.js"))
         frag.add_javascript(self.resource_string("static/js/src/hello_world.js"))
         frag.initialize_js('HelloWorldXBlock')
         return frag
@@ -86,7 +86,5 @@ class HelloWorldXBlock(XBlock):
                 </vertical_demo>
              """),
         ]
-        
-    def resource_url(self, resource):
-        return static("workbench/" + resource)
+
     
