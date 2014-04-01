@@ -1,0 +1,43 @@
+/* CSS for HelloWorldXBlock */
+
+.hello_world_block .count {
+    font-weight: bold;
+}
+
+/*
+.hello_world_block p {
+    cursor: pointer;
+}
+*/
+
+#piano {
+    display: block;
+    width: 100%;
+    background-color: #7B3F00;
+}
+#music-stand-frame {
+    display: block;
+    padding: 10px;
+}
+#music-stand {
+    display: block;
+    width: 726px;
+    height: 160px;
+    border: 1px solid black;
+    margin: 10px auto;
+    background-color: white;
+}
+#keyboard-frame {
+    display: block;
+    padding: 10px;
+}
+#keyboard {
+    display: block;
+    width: 728px;
+    height: 202px;
+    margin: 10px auto;
+    border-right: 1px solid black;
+}
+#keyboard ul {
+    margin: 0;
+}
