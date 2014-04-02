@@ -80,7 +80,7 @@ class HelloWorldXBlock(XBlock):
     def workbench_scenarios():
         """A canned scenario for display in the workbench."""
         return [
-            ("HelloWorldXBlock",
+            ("Know Your Notes",
              """<vertical_demo>
                 <hello_world/>
                 </vertical_demo>
